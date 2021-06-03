@@ -1,0 +1,74 @@
+{% load static%}
+<html lang="en">
+<head>
+  <script src="{%static 'bootstrap/js/bootstrap.bundle.min.js'%}"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous">
+  function call()
+  {
+    window.location.href="/UserInfo.html";
+  }
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="{%static 'main.css' %}">
+  <link href="{%static 'bootstrap/css/bootstrap.min.css'%}" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="bg">
+    <div class="container-fullwidth">
+      <nav class="navbar navbar-expand-lg width-300% navbar-light py-3 px-3" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">H-Management</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'addUser' %}">Add User</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'history' %}">History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fullwidth">
+      <div class="px-2 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Enter Into Our Services</h1>
+        <div class="col-lg-3 mx-auto">
+          <p style="font-weight:normal;color:rgb(7, 8, 8)"class="lead mb-4">Security service in a hospital is a service responsible for ensuring the security and
+            safety of the hospital plant, personnel, patients and public as well as regulating the traffic within the
+            hospital premises. A hospital is a busy public dealing place trying to provide care, comfort and cure to the
+            patient.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">Start</button>
+            <button type="button" class="btn btn-outline-warning btn-lg px-4">Stop</button>
+          </div>
+        </div>
+      </div>
+    </div><br>
+      <footer class="text-center text-lg-start fixed-bottom">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a style="background:unset" class="text-primary" href="">H-Management</a>
+        </div>
+      </footer>
+</body>
+
+</html>

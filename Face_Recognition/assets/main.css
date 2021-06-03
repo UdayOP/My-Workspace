@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .anc{
+    all: none;
+  }
+  .bg{
+    background-image: url('./img/Doc1.jpg');
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .navbar-brand{
+      background-color:rgb(103, 190, 103);
+      padding: 10px;
+      border-radius:50%;
+      font-weight: bolder;
+  }
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  footer{
+      background-color:rgb(108, 109, 189);
+      color: white;
+  }
+  a{
+   font-size: 18px;
+   font-weight:2px;
+  }
+  a:hover{
+      background-color: rgb(57, 201, 181);
+      font-weight: bold;
+  }
+  .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 150%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline:0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    color: #8D8D8D;
+    margin-top: 10px;
+}
+.form-holder {
+    display: flex;
+    margin-left: -50em;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+.form-style{
+    border: rgb(233, 236, 240);
+    border-style: solid;
+    border-radius: 1em;
+    padding:4em 3em 3em 4em;
+    size: 100vh;
+}
+h1{
+    color: rgb(68, 6, 77);
+    font-weight: bolder;
+}
+.custom{
+    width:100px;
+}
+.form-control{
+    height: 6vh;
+    height: 6vh;
+    margin: auto;
+}
+.form-control:hover{
+   border-color: rgb(164, 136, 184);
+   border-width: 1px;
+}
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width:320px;
+    height:240px;
+  }
+  
+  #photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width:320px;
+    height:240px;
+  }
+  
+  #canvas {
+    display: hidden;
+    display:none;
+    width: 320px;
+  }
+  
+  .camera {
+    width: 320px;
+    display:inline-block;
+  }
+  #startbutton {
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:32px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  
+  .contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 400px;
+    margin-top: 80px;
+    margin-right: 50px;
+    height: 520px;
+  }
+  .clable{
+    color: rgb(37, 6, 63); 
+    font-weight: bold;
+  }
